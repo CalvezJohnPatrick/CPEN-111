@@ -10,6 +10,9 @@ pkg load image;
 image2 = imread('nature.jpg');
 imwrite(image2,'Nature.png');
 
+grayscale = rgb2gray(image2)
+whos grayscale
+
 red = image2;
 red(:,:,2) = 0;
 red(:,:,3) = 0;
